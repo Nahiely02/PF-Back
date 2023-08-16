@@ -1,0 +1,264 @@
+/*Selector de tipo ID*/
+
+#barra-navegacion{
+    /*propiedad*/
+    background-color: #F9B4C6;
+    color:rgb(14, 14, 14);
+}
+
+.estilo-links{
+    font-weight: bold ;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+/*selector de etiqueta*/
+img{
+width: 50%;
+}
+
+/*selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*tipografias*/
+/*fuene local*/
+@font-face{
+    font-family: 'fuente-principal' ;
+    src: url('../assets/fonts/Poppins-Regular.ttf'); /*ubicacionde la fuete*/
+}
+
+/*fuente externa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/*tipografia local*/
+.font-main{
+    font-family: 'fuente-principal', sans-serif;
+}
+/*tipografia externa*/
+.encabezado-home{
+    text-transform: uppercase; /*pone todo en mayuscula*/
+    font-family: 'Roboto', sans-serif; /* negrita*/
+    font-size: 30px; /*el tamaño*/
+    font-weight: bold; /*el peso*/
+    color: #473f41;
+    
+}
+
+/*box modeling*/
+.elemento-bloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*flexbox teoria*/
+/*contenedor padre*/
+.flex-container{
+    /*activamos flex en el contenedor padre*/
+    display: flex; /*pone todas las cajitas en horizontal/vertical*/
+    flex-direction: row; /*row= horizontal, column= vertical*/
+    justify-content: space-evenly;
+    align-items: flex-start; /*trabaja sobre el eje secundario, opuesto al principal*/
+
+    /*defino el desborde de los flex items*/
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    border: 5px solid#000;
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px;
+    height: 900px;
+}
+
+.caja{
+    /*box modeling*/
+    width: 400px;
+    height:400px;
+    border: 5px solid #ccc;
+    margin 2px;
+    display: flex;
+}
+
+.grid-container{
+    /*box modeling*/
+    width: 90%;
+    max-width: 1200px;
+    border: 10px solid #fff;
+    margin: auto;
+
+    /*tipografia*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    text-align: center;
+
+    /*activamos grid*/
+    display: grid;
+
+    /*definimos cantidad de columnas y su ancho*/
+    grid-template-columns: repeat(3, 1fr); /*aqui defini 3 columnas  y su ancho*/
+
+    /*definimos cantidad de filas y su alto*/
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px ; /*defino el espacio entre columnas*/
+    row-gap: 10px; /*defino el espacio entre filas*/
+}
+.grid-container >div{
+    /*box modeling*/
+    display: block;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.titulo-combo{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*flexbox al nav*/
+.icon-uña{
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    font-family: 'fuente-principal', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*pseudoclases*/
+a:hover{ /*posar el mouse*/
+    font-size: 20px;
+    color: #473f41;
+    border-bottom: 3px solid #000;
+}
+
+a:active{ /*click*/
+    background-color: #f09db4;
+    color: #000;
+    padding: 10px;
+}
+
+/*METODOLOGIA BEM*/
+.contenedor{
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+/*bloque 1 (padre)*/
+.tarjeta{
+    width: 600px;
+    border: 5px double #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*elemento 1 (hijo)*/
+.tarjeta__imagen{
+    width: 50%;
+    border-radius: 5%;
+}
+/*elemento 2*/
+.tarjeta__textos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+/*elemento 3*/
+.tarjeta__enlace{
+    color: #f10086;
+    padding: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'fuente-principal'
+}
+/*elemento 4*/
+.tarjeta__parrafo{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+/*bloque 2*/
+.boton{
+    background: #000;
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+    border-radius:10px ;
+    color: #dff;
+}
+
+/*Mediaqueres*/
+@media screen and (max-width: 480px){ /*aqui se definimos la vista de una pantalla con un maximo de 480px(celular)*/
+    .caja{
+    /*box modeling*/
+    width: 120px;
+    height:120px;
+    border: 2px solid #ccc;
+    margin 2px;
+    display: grid; 
+
+    /*activamos grid*/
+    display: grid;
+
+    /*definimos ancho de columnas*/
+    grid-template-columns: 100%; 
+
+    /*definimos cantidad de filas y su alto*/
+    grid-template-rows: repeat(6, auto);
+    row-gap: 5px; /*defino el espacio entre filas*/
+}
+
+.grid-container{
+    /*box modeling*/
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+
+    /*tipografia*/
+    font-size: 50px;
+    text-align: center;
+
+    /*activamos grid*/
+    display: grid;
+
+    /*definimos ancho de columnas*/
+    grid-template-columns: 100%; 
+
+    /*definimos cantidad de filas y su alto*/
+    grid-template-rows: repeat(6, auto);
+    row-gap: 10px; /*defino el espacio entre filas*/
+}
+}
+
+@media screen and (min-width: 961px) and (max-width: 1328px){ /*vista escritorio*/
+.caja{
+    /*box modeling*/
+    width: 240px;
+    height: 240px;
+    border: 2px solid #ccc;
+    margin 2px;
+    display: flex;
+}
+}

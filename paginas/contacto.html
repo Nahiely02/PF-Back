@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Boostrap download -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Mimarte Center-Contacto</title>
+</head>
+
+<main>
+    <body>
+        <nav id="barra-navegacion">
+            <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icon-uña"> 
+            <a class="estilo-links" href="../index.html">HOME</a>
+            <a class="estilo-links" href="./servicios.html">SERVICIOS</a>
+            <a class="estilo-links" href="./combos.html">COMBOS</a>
+            <a class="estilo-links" href="./fotos.html">IMAGENES</a>
+            <a class="estilo-links" href="#">CONTACTO</a>
+        </nav>
+    </body>
+</main>
+
+<body>
+    <h3>Completar y enviar</h3>
+    <form action="procesar.php" method="post"> <!-- abrimos formulario, metodo POST para data invisible al viajar -->
+        
+        <!--  input nombre -->
+        <div> <!-- etiqueta de bloque -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="nombre..">
+        </div>
+
+        <!-- input apellido -->
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="apellido..">
+        </div>
+
+        <!-- input email -->
+        <div>
+            <label for="email">Correo electronico:</label>
+            <input type="text" name="email" placeholder="ejemplo@servidor.com" required> <!-- atributo requerido -->
+        </div>
+
+        <!-- Radio -->
+        <h4>Seleccione su genero: </h4>
+
+        <label for="genero">Femenino</label>
+        <input type="radio" name="genero" value="femenino">
+
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" value="masculino">
+
+        <label for="genero">Prefiero no decirlo</label>
+        <input type="radio" name="genero" value="no decirlo">
+
+        <!-- checkbox -->
+        <h3>¿Cual servicio te interesa?</h3>
+
+        <label for="servicio">Semipermanente</label>
+        <input type="checkbox" name="servicio" value="semis">
+
+        <label for="servicio">Capping gel</label>
+        <input type="checkbox" name="servicio" value="capping">
+
+        <label for="servicio">Extensión soft-gel</label>
+        <input type="checkbox" name="servicio" value="soft-gel">
+
+        <label for="servicio">Combos</label>
+        <input type="checkbox" name="servicio" value="combos">
+
+        <!-- caja de comentario -->
+        <h4>Envíe su consulta</h4>
+        <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+
+        <!-- botones -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar formulario</button>
+        
+    </form>
+    <!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer> <!-- pie de pagina -->
+    <ul> <!-- LISTA DESORDENADA -->
+    <li><a href="#">Contacto</a></li>
+    <li><a href="/rrss">Redes Sociales</a></li>
+    </ul>
+    <p>&copy; 2023 Copyright</p>
+</footer>
+
+</html>
