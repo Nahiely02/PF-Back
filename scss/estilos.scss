@@ -47,16 +47,8 @@ width: 50%;
     font-family: 'Roboto', sans-serif; /* negrita*/
     font-size: 30px; /*el tamaño*/
     font-weight: bold; /*el peso*/
-    color: #473f41;
+    color: #000;
     
-}
-
-/*box modeling*/
-.elemento-bloque{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 /*flexbox teoria*/
@@ -210,26 +202,4 @@ a:active{ /*click*/
     padding:10px;
     border-radius:10px ;
     color: #dff;
-}
-
-/*Mediaqueres*/
-.grid-container{
-    /*box modeling*/
-    width: 90%;
-    max-width: 480px;
-    margin: auto;
-
-    /*tipografia*/
-    font-size: 50px;
-    text-align: center;
-
-    /*activamos grid*/
-    display: grid;
-
-    /*definimos ancho de columnas*/
-    grid-template-columns: 100%; 
-
-    /*definimos cantidad de filas y su alto*/
-    grid-template-rows: repeat(6, auto);
-    row-gap: 10px; /*defino el espacio entre filas*/
 }

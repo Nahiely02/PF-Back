@@ -25,12 +25,9 @@
         <a class="estilo-links" href="./paginas/contacto.html">CONTACTO</a>
     </nav>
 
-    <!-- Box modeling -->
-    <!--  elemento de bloque -->
-    <h1 class="elemento-bloque">WELCOME</h1>
 
     <header>
-        <img src="./assets/logo-trans.jpeg" alt="foto del logo"> <!-- imagen -->
+        <img align="center" src="./assets/logo-trans.jpeg" alt="foto del logo"> <!-- imagen -->
     </header>
 
     <main>
@@ -48,16 +45,31 @@
     
     </body>
 
-    <div class="p-3 mb-2 bg-danger text-white"> <!-- color del footer -->   
-        <footer> <!-- pie de pagina -->
-            <ul> <!-- LISTA DESORDENADA -->
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-                <li><a href="/rrss">Redes Sociales</a></li>
+    <footer class="bg-Light text-dark py-2"> <!-- pie de pagina -->
+        <div class="container">
+            <nav class="row">
+                <a href="#" class="col-3 text-reset text-uppercase d-flex aling-items-center"> 
+                    <img src="./assets/iconos/icono favicom.png" alt="logo" class="img-logo mr-1">
+                </a>
+                <ul class="col-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">Paginas</li>
+                    <li><a href="./paginas/servicios.html" class="text-reset">Servicios</a></li>
+                    <li><a href="./paginas/combos.html" class="text-reset">Combos</a></li>
+                    <li><a href="./paginas/fotos.html" class="text-reset">Imagenes</a></li>
+                    <li><a href="./paginas/contacto.html" class="text-reset">Contacto</a></li>
                 </ul>
-            <p>&copy; 2023 Copyright</p>
-        </footer>
-    </div>
-
-
-
+                <!-- redes sociales  -->
+                <ul class="col-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase"> Redes Sociales</li>
+                    <li class="d-flex justify-content-between">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" class="text-reset"><img src="./assets/iconos/facebook.png" alt="facebook"></a>
+                        <a target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" class="text-reset"><img src="./assets/iconos/instagram.png" alt="instagram"></a>
+                        <a target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" class="text-reset"><img src="./assets/iconos/whatsapp.png" alt="whatsapp"></a>
+                        <a target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" class="text-reset"><img src="./assets/iconos/tik-tok.png" alt="tik-tok"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2023 Copyright</p> 
+    </footer>
 </html>
