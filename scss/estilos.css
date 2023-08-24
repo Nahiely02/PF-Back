@@ -109,50 +109,18 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
-/*Animaciones*/
+/*flexbox al nav*/
 .icon-uña {
   width: 100px;
   border-radius: 50%;
-  animation-name: logo-uña-anime; /*nombre de la animacion*/
-  animation-iteration-count: 1; /*repeticiones de la animacion*/
-  animation-timing-function: ease-out;
-  animation-duration: 2s; /*duracion de la animacion*/
-  animation-delay: 2s;
 }
 
-@keyframes logo-uña-anime {
-  /*ejemplo 1
-  0%{
-      width: 60px;
-  }
-  25%{
-      width: 60px
-  }
-  50%{
-      width: 20px
-  }
-  75%{
-      width: 80px
-  }
-  100%{
-      width: 20px
-  }*/
-  /*ejemplo 2*/
-  0% {
-    transform: rotate3d(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 nav {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /*gradientes*/
-  background-image: linear-gradient(to bottom, #BE8FA1, #F9B4C6);
 }
 
 a {
@@ -179,8 +147,6 @@ a:active { /*click*/
   max-width: 500px;
   width: 100%;
   margin: 20px;
-  /*transformaciones*/
-  transform: translate(100px, 0px);
 }
 
 /*bloque 1 (padre)*/
@@ -223,14 +189,14 @@ a:active { /*click*/
 
 /*bloque 2*/
 .boton {
-  background-image: radial-gradient(circle, #F9B4C6, #BE8FA1);
+  background: #000;
   display: block;
   width: 100px;
   font-weight: bold;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  color: #000;
+  color: #dff;
 }
 
 /*# sourceMappingURL=estilos.css.map */
