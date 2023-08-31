@@ -31,27 +31,23 @@
 </main>
 
 <body>
-    <h2>Completar y enviar</h2>
+    <h1>Completar y enviar</h1>
     <form action="procesar.php" method="post"> <!-- abrimos formulario, metodo POST para data invisible al viajar -->
-        
         <!--  input nombre -->
         <div> <!-- etiqueta de bloque -->
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" placeholder="nombre..">
         </div>
-    
         <!-- input apellido -->
         <div>
             <label for="apellido">Apellido:</label>
             <input type="text" name="apellido" placeholder="apellido..">
         </div>
-
         <!-- input email -->
         <div>
             <label for="email">Correo electronico:</label>
             <input type="text" name="email" placeholder="ejemplo@servidor.com" required> <!-- atributo requerido -->
         </div>
-
         <!-- Radio -->
         <h4>Seleccione su genero: </h4>
 
@@ -65,7 +61,7 @@
         <input type="radio" name="genero" value="no decirlo">
 
         <!-- checkbox -->
-        <h3>¿Cual servicio te interesa?</h3>
+        <h3>Servicio:</h3>
 
         <label for="servicio">Semipermanente</label>
         <input type="checkbox" name="servicio" value="semis">
@@ -94,7 +90,7 @@
 
 <!-- pie de pagina -->
 <footer class="bg-Light text-dark py-2"> 
-    <div class="container">
+    <div>
         <nav class="row">
             <a href="#" class="col-3 text-reset text-uppercase d-flex aling-items-center"> 
                 <img src="../assets/iconos/icono favicom.png" alt="logo" class="img-logo mr-1">
