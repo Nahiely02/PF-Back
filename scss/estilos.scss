@@ -22,13 +22,11 @@ $color-size: 1.5rem;
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;   
 }
 
 /*selector de etiqueta*/
-img{
-width: 50%;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -36,14 +34,49 @@ width: 50%;
     text-decoration: none;
 }
 
+img{
+width: 50%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*gradientes*/
+    background-image: linear-gradient(to bottom, #BE8FA1, #F9B4C6);
+}
+
+footer{
+    width: 100%;
+}
+
+a{
+    font-family: 'fuente-principal', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*pseudoclases*/
+a:hover{ /*posar el mouse*/
+    font-size: 20px;
+    color: #fff;
+}
+a:active{ /*click*/
+    color: #000;
+    padding: 10px;
+}
+
 /*tipografias*/
 /*fuente local*/
 @font-face{
     font-family: 'fuente-principal' ;
     src: url('../assets/fonts/Poppins-Regular.ttf'); /*ubicacionde la fuete*/
-}
-body{
-    font-family: 'Poppins', sans-serif;
 }
 
 /*fuente externa*/
@@ -88,7 +121,7 @@ body{
 
 .grid-container{
     /*box modeling*/
-    width: 90%;
+    width: 70%;
     max-width: 1200px;
     border: 10px solid #fff;
     margin: auto;
@@ -102,25 +135,36 @@ body{
     display: grid;
 
     /*definimos cantidad de columnas y su ancho*/
-    grid-template-columns: repeat(3, 1fr); /*aqui defini 3 columnas  y su ancho*/
+    grid-template-columns: repeat(1, 1fr); /*aqui defini 3 columnas  y su ancho*/
 
     /*definimos cantidad de filas y su alto*/
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px ; /*defino el espacio entre columnas*/
-    row-gap: 10px; /*defino el espacio entre filas*/
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px ; /*defino el espacio entre columnas*/
+    row-gap: 20px; /*defino el espacio entre filas*/
 }
 .grid-container >div{
     /*box modeling*/
     display: block;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 10px;
     background-color: #f08080;
     color: #fff;
 }
 
-.titulo-combo{
-    font-size: 18px;
+.titulo-combo{//seccion combos
+    font-size: 30px;
     font-family: 'fuente-principal', sans-serif;
+}
+
+.div-footer{ //seccion footer
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    /*gradientes*/
+    background-image: linear-gradient(to bottom, #BE8FA1, #F9B4C6);
+    padding: auto;
 }
 .cont{
     max-width: 1200px;
@@ -131,7 +175,7 @@ body{
     text-align: center;
     margin-bottom: 45px;
 }
-.navbar h1, h3{
+.navbar h3{
     font-size: 100px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -161,13 +205,12 @@ body{
 .main-container{
     display: flex;
     text-align: center;
-    justify-content: space-between;
     margin-top: 20px;
 }
 .main-container h1, h2{
     font-size: 90px;
     line-height: 100px;
-    color: #f08080;
+    color: #000;
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -189,7 +232,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f541a4;
+    background-color: #E58AB3;
     padding: 35px 25px;
     margin: 0 10px;
     border-radius: 15px;
@@ -200,13 +243,27 @@ body{
     font-family: 'fuente-principal', sans-serif;
 }
 .services-pack img{
-    width: 100px;
+    width: 45%;
     margin-bottom: 15px;
 }
 
 .services-pack h3{
     font-size: 60px;
 
+}
+
+.form{
+    width: 340px;
+    height: 550px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: 40%;
+    padding: 20px 30px;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 
@@ -216,7 +273,7 @@ body{
 
 /*Animaciones*/
 .icon-uña{
-    width: 100px;
+    width: 10%;
 
     border-radius: 50%;
     animation-name: logo-uña-anime; /*nombre de la animacion*/
@@ -235,34 +292,6 @@ body{
     }
 }
 
-nav{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /*gradientes*/
-    background-image: linear-gradient(to bottom, #BE8FA1, #F9B4C6);
-}
-
-a{
-    font-family: 'fuente-principal', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/*pseudoclases*/
-a:hover{ /*posar el mouse*/
-    font-size: 20px;
-    color: #473f41;
-}
-
-a:active{ /*click*/
-    color: #000;
-    padding: 10px;
-}
-
 /*METODOLOGIA BEM*/
 .contenedor{
     max-width: 500px;
@@ -275,7 +304,7 @@ a:active{ /*click*/
 
 /*bloque 1 (padre)*/
 .tarjeta{
-    width: 600px;
+    width: 100%;
     border: 5px double #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -312,7 +341,7 @@ a:active{ /*click*/
 .boton{
     background-image: radial-gradient(circle, #F9B4C6, #BE8FA1);
     display: block;
-    width: 100px;
+    width: 15%;
     font-weight: bold;
     text-align: center;
     padding:10px;
