@@ -14,57 +14,68 @@
 
     <!--  Boostrap download -->
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/dd60a290a8.js" crossorigin="anonymous"></script>
     
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
+    
     <title>Mimarte Center-Home</title>
 </head>
 
 <body>
     <nav id="barra-navegacion">  <!-- aqui dentro van haber LINKS/ no duplicar ID -->
-        <img class="icon-uña" src="./assets/iconos/icono favicom.png" alt="icon-uña">
-        <a class="estilo-links" href="#">HOME</a><!--  etiqueta arcord/ el '#' es para no irse a otra pestaña al cliquear  -->
-        <a class="estilo-links" href="./paginas/servicios.html">SERVICIOS</a>                
-        <a class="estilo-links" href="./paginas/combos.html">COMBOS</a>
-        <a class="estilo-links" href="./paginas/fotos.html">IMAGENES</a>
-        <a class="estilo-links" href="./paginas/contacto.html">CONTACTO</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <a href="#" class="enlace-uña"> 
+            <img class="icon-uña" src="./assets/iconos/icono favicom.png" alt="icono-uña">
+        </a>
+        <ul>
+            <a class="estilo-links" href="#">HOME</a><!--  etiqueta arcord/ el '#' es para no irse a otra pestaña al cliquear  -->
+            <a class="estilo-links" href="./paginas/servicios.html">SERVICIOS</a>                
+            <a class="estilo-links" href="./paginas/combos.html">COMBOS</a>
+            <a class="estilo-links" href="./paginas/fotos.html">IMAGENES</a>
+            <a class="estilo-links" href="./paginas/contacto.html">CONTACTO</a>
+        </ul>
     </nav>
+    <section></section>
 
     <header class="img-header"> <!-- imagen de fondo -->
-        <img src="./assets/logo-color.png" alt="imagen del logo">
+        <img class="img-fluid" src="./assets/logo-color.png" alt="imagen del logo">
     </header>
-    <!--  MODIFICACIONES -->
-    <div class="navbar cont">
-        <div class="info-header">
-            <div class="info">
-                <h3>Ubicacion</h3>
-                <p>Oberá, Misiones</p>
-            </div>
-
-            <div class="info">
-                <h3>Modalidad</h3>
-                <p>Cita previa</p>
-            </div>
-
-            <!-- <div class="info">
-                <h3>Horarios</h3>
-                <p>De 8:00 a 12:00 y 16:00 a 20:00 hs</p>
-            </div> -->
-        </div>
-    </div>
     
-
-    <!-- MODIFICACIONES 2 -->
     <main class="main-container">
         <section> 
-            <article> <!-- articulo 1, aqui hablamos de algo referido a nuestra pagina-->   
+            <h1 class="text-center my-5">¿Por qué elegirnos?</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Desde el año 2018 nos especializamos y profesionalizamos para dedicarnos al cuidado de manos y pies. 
+                            Ofrecemos a nuestras clientas un servicio de alto nivel con productos de calidad y con una duración óptima,
+                            siempre a la vanguardia en productos, colores y tendencias a elección de ellas, todo realizado a mano alzada.</p>
+
+                        <p>Nuestro objetivo es resaltar la belleza de manos y pies de nuestras clientas esmaltando desde 
+                            diferentes servicios, ultimando cada detalle y ofreciendo los mejores combos, calidad de productos y 
+                            duración de servicios logrando así tu elección de volver a elegirnos gracias a nuestro cuidado</p>
+                    
+                        </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="./assets/manicurista-trabajo.jpg" alt="manicurista trabajando">
+                    </div>
+                </div>
+            </div>
+
+            <div>  
                 <h2>Hoy es un hermoso dia para MimArte!</h2>
-                <p>Te ofrecemos un servicio de alto nivel con productos de calidad, actualizandomos en productos, colores y tendencias.</p>
-            </article>
-        </section>
-        <section>
-            <!-- iframe -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WbfV0FsGwnY?si=d6cSrGkWcwJZ0C5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+                <!-- iframe -->
+            <div class="main-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WbfV0FsGwnY?si=d6cSrGkWcwJZ0C5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
@@ -74,36 +85,35 @@
 
 
 
-
-
-
-    <!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
+    <!-- JS Boostrap-->
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <footer class="bg-Light text-dark py-2"> <!-- pie de pagina -->
-            <div class="row div-footer">
-                <a href="#" class="col-3 text-reset text-uppercase d-flex aling-items-center"> 
-                    <img src="./assets/iconos/icono favicom.png" alt="logo" class="img-logo mr-1">
-                </a>
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase">Paginas</li>
-                    <li><a href="./paginas/servicios.html" class="text-reset">Servicios</a></li>
-                    <li><a href="./paginas/combos.html" class="text-reset">Combos</a></li>
-                    <li><a href="./paginas/fotos.html" class="text-reset">Imagenes</a></li>
-                    <li><a href="./paginas/contacto.html" class="text-reset">Contacto</a></li>
-                    <li><p>&copy; 2023 Copyright</p></li>
-                </ul>
-                <!-- redes sociales  -->
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase"> Redes Sociales</li>
-                    <li class="d-flex justify-content-between">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" class="text-reset"><img src="./assets/iconos/facebook.png" alt="facebook"></a>
-                        <a target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" class="text-reset"><img src="./assets/iconos/instagram.png" alt="instagram"></a>
-                        <a target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" class="text-reset"><img src="./assets/iconos/whatsapp.png" alt="whatsapp"></a>
-                        <a target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" class="text-reset"><img src="./assets/iconos/tik-tok.png" alt="tik-tok"></a>
-                    </li>
-                </ul>
+    <!-- pie de pagina -->
+    <footer class="footer"> 
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <img src="./assets/iconos/icono-footer.svg" alt="icono">
+                </figure>
             </div>
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Nuestros productos y servicios se basan en cinco pilares fundamentales:</p>
+                <p>Innovación, adaptabilidad, Sostenibilidad, Seguridad y Salubridad</p>
+            </div>
+            <div class="box">
+                <h3>SIGUENOS!</h3>
+                <div class="red-social">
+                    <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" alt="facebook"></a>
+                    <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" alt="instagram"></a>
+                    <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" alt="whatsapp"></a>
+                    <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" alt="tiktok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 Copyright <b>Mimarte-Center</b> -Todos los derechos reservados.</small>
+        </div>
     </footer>
 </body>
 

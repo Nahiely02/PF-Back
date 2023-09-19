@@ -13,6 +13,9 @@
     <!--  Boostrap download -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
 
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/dd60a290a8.js" crossorigin="anonymous"></script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css"> 
     <title>Mimarte Center-Servicios</title>
@@ -20,90 +23,97 @@
 
 <body>
     <nav id="barra-navegacion">
-        <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icon-uña">
-        <a class="estilo-links" href="../index.html">HOME</a>
-        <a class="estilo-links" href="#">SERVICIOS</a>
-        <a class="estilo-links" href="./combos.html">COMBOS</a>
-        <a class="estilo-links" href="./fotos.html">IMAGENES</a>
-        <a class="estilo-links" href="./contacto.html">CONTACTO</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="../index.html" class="enlace-uña"> <!-- class "enlace" -->
+            <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icono-uña">
+        </a>
+
+        <ul>
+            <a class="estilo-links" href="../index.html">HOME</a>
+            <a class="estilo-links" href="#">SERVICIOS</a>
+            <a class="estilo-links" href="./combos.html">COMBOS</a>
+            <a class="estilo-links" href="./fotos.html">IMAGENES</a>
+            <a class="estilo-links" href="./contacto.html">CONTACTO</a>
+        </ul>
     </nav>
 
-    <!-- MODIFICACIONES -->
-    <main>
-        <article class="main-container">
-            <h1>Nuestros servicios</h1>
-        </article>
-
-        <div class="grupo-services">
-            <div class="services-pack">
-                <img src="../assets/iconos/uña-esmalt-icon.svg" alt="icono uña esmaltada">
-                <h3>Servicio 1</h3>
-                <p>Lorem ipsum blablabla</p>
-            </div>
-
-            <div class="services-pack">
-                <img src="../assets/iconos/pie-icon.svg" alt="icono pie esmaltado">
-                <h3>Servicio 2</h3>
-                <p>Lorem ipsum blablabla</p>
-            </div>
-
-            <div class="services-pack">
-                <img src="../assets/iconos/uña-rota-icon.svg" alt="icono uña dañada">
-                <h3>Servicio 3</h3>
-                <p>Lorem ipsum blablabla</p>
+    
+<main>
+    <h1>Te ofrecemos un servicio de alto nivel y calidad de nuestros productos</h1>
+    <!-- METODOLOGIA BEM -->
+    <div class="cards">
+        <div class="cards_block">
+            <figure>
+                <img src="../assets/soft gel-card.jpg" alt="imagen uñas soft gel">
+            </figure>
+            <div class="cards_contenido">
+                <h3>SOFT-GEL</h3>
+                <p>La técnica de Soft Gel consiste en un método de extensión de uñas mediante tips
+                    que se adhieren directamente a la superficie de la uña natural. Los Soft Gel Nail Tips  están hechos de
+                    plástico flexible y se han ganado su popularidad por tratarse de una técnica rápida, cómoda y efectiva. </p>
             </div>
         </div>
-    </main>
 
-        <!-- METODOLOGIA BEM -->
-        <section class="contenedor">
+        <div class="cards_block">
+            <figure>
+                <img src="../assets/capping-card.jpg" alt="imagen uñas capping gel">
+            </figure>
+            <div class="cards_contenido">
+                <h3>CAPPING GEL</h3>
+                <p>La manicura capping gel consiste en aplicar una fina capa de gel fortificador sobre 
+                    la uña que actúa como una barrera protectora. A diferencia de las uñas esculpidas, este baño en 
+                    gel capping no alarga la uña natural sino que acompaña el crecimiento de la misma y dura hasta unos 20 días.</p>
+            </div>
+        </div>
 
-            <!-- bloque 1 -->
-            <article class="tarjeta">
-                <img class="tarjeta__imagen" src="../assets/dafy-trabajo.jpg" alt="dafy-trabajo">
+        <div class="cards_block">
+            <figure>
+                <img src="../assets/semipermanente-card.jpg" alt="imagen uñas semipermanentes">
+            </figure>
+            <div class="cards_contenido">
+                <h3>SEMIPERMANENTE</h3>
+                <p>La manicura semipermanente es un esmaltado de secado inmediato y de larga duración que mantiene un resultado reluciente. Este efecto se consigue con la aplicación de esmaltes específicos y el secado de las uñas en una luz UV o LED.
+                    Si quieres que tus uñas se vean perfectas durante 15 días, la manicura semipermanente es la mejor opción.</p>
+            </div>
+        </div>
+    </div>
+</main>
 
-                <article class="tarjeta__textos"></article>
-                <h3 class="tarjeta__titulo">
-                    <a class="tarjeta__enlace" href="#">Manicura Y Pedicura</a>
-                </h3>
-                <p class="tarjeta__parrafo"> Habilitacion para el tratamiento estético de uñas tanto
-                    femeninas como masculinas incluyendo,
-                    técnicas de esmaltado y fantasías, construcción de uñas esculpidas en don tencas en acrílicos y geles.
-                    Tratamiento estético de la piel de la mano y el antebrazo.</p>
-                <!-- bloque 2 -->
-                <button class="boton">Ver</button>
-            </article>
-        </section>
 
     <!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- pie de pagina -->
-    <footer class="bg-Light text-dark py-2"> 
-            <div class="row div-footer">
-                <a href="../index.html" class="col-3 text-reset text-uppercase d-flex aling-items-center"> 
-                    <img src="../assets/iconos/icono favicom.png" alt="logo" class="img-logo mr-1">
-                </a>
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase">Paginas</li>
-                    <li><a href="#" class="text-reset">Servicios</a></li>
-                    <li><a href="./combos.html" class="text-reset">Combos</a></li>
-                    <li><a href="./fotos.html" class="text-reset">Imagenes</a></li>
-                    <li><a href="./contacto.html" class="text-reset">Contacto</a></li>
-                    <li><p>&copy; 2023 Copyright</p></li>
-                </ul>
-                <!-- redes sociales  -->
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase">Redes Sociales</li>
-                    <li class="d-flex justify-content-between">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" class="text-reset"><img src="../assets/iconos/facebook.png" alt="facebook"></a>
-                        <a target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" class="text-reset"><img src="../assets/iconos/instagram.png" alt="instagram"></a>
-                        <a target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" class="text-reset"><img src="../assets/iconos/whatsapp.png" alt="whatsapp"></a>
-                        <a target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" class="text-reset"><img src="../assets/iconos/tik-tok.png" alt="tik-tok"></a>
-                    </li>
-                </ul> 
+<!-- pie de pagina -->
+<footer class="footer"> 
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <img src="../assets/iconos/icono-footer.svg" alt="icono">
+            </figure>
+        </div>
+        <div class="box">
+            <h3>SOBRE NOSOTROS</h3>
+            <p>Nuestros productos y servicios se basan en cinco pilares fundamentales:</p>
+            <p>Innovación, adaptabilidad, Sostenibilidad, Seguridad y Salubridad</p>
+        </div>
+        <div class="box">
+            <h3>SIGUENOS!</h3>
+            <div class="red-social">
+                <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" alt="facebook"></a>
+                <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" alt="instagram"></a>
+                <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" alt="whatsapp"></a>
+                <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" alt="tiktok"></a>
             </div>
-    </footer>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 Copyright <b>Mimarte-Center</b> -Todos los derechos reservados.</small>
+    </div>
+</footer>
+
 </body>
 
 </html>

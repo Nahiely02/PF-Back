@@ -12,6 +12,9 @@
     <!--  Boostrap download -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/dd60a290a8.js" crossorigin="anonymous"></script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Mimarte Center-Contacto</title>
@@ -19,82 +22,77 @@
 
 <body>
     <nav id="barra-navegacion">
-        <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icon-uña"> 
-        <a class="estilo-links" href="../index.html">HOME</a>
-        <a class="estilo-links" href="./servicios.html">SERVICIOS</a>
-        <a class="estilo-links" href="./combos.html">COMBOS</a>
-        <a class="estilo-links" href="./fotos.html">IMAGENES</a>
-        <a class="estilo-links" href="#">CONTACTO</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="../index.html" class="enlace-uña"> <!-- class "enlace" -->
+            <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icono-uña">
+        </a>
+
+        <ul>
+            <a class="estilo-links" href="../index.html">HOME</a>
+            <a class="estilo-links" href="./servicios.html">SERVICIOS</a>
+            <a class="estilo-links" href="./combos.html">COMBOS</a>
+            <a class="estilo-links" href="./fotos.html">IMAGENES</a>
+            <a class="estilo-links" href="#">CONTACTO</a>
+        </ul>
     </nav>
 
-    <h1>Contactanos!</h1>
-    <form class="form" action="procesar.php" method="post"> <!-- abrimos formulario, metodo POST para data invisible al viajar -->
-        
-        <!--  input nombre -->
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="nombre..">
+    <div class="contact-section">
 
-        <!-- input apellido -->
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" placeholder="apellido..">
+        <h1>Contactanos!</h1>
+        <div class="contact-border"></div>
 
-        <!-- input email -->
-        <label for="email">Correo electronico:</label>
-        <input type="text" name="email" placeholder="ejemplo@servidor.com" required> <!-- atributo requerido -->
+        <form class="contact-form" action="procesar.php" method="post"> <!-- abrimos formulario, metodo POST para data invisible al viajar -->
+            <!-- input nombre -->
+            <input type="text" class="contact-form-text" name="nombre" placeholder="Nombre">
 
-        <!-- checkbox -->
-        <h4>Servicio:</h4>
+            <!-- input nombre -->
+            <input type="text" class="contact-form-text" name="apellido" placeholder="Apellido">
+    
+            <!-- input email -->
+            <input type="email" class="contact-form-text" name="email" placeholder="ejemplo@servidor.com" required> <!-- atributo requerido -->
+    
+            <!-- caja de comentario -->
+            <textarea class="contact-form-text" name="Mensaje" placeholder="Tu mensaje..."></textarea>
+            
+            <!-- boton -->
+            <button type="submit" class="contact-form-btn">Enviar</button>
+        </form>
+    </div>
 
-        <label for="servicio">Semipermanente</label>
-        <input type="checkbox" name="servicio" value="semis">
-
-        <label for="servicio">Capping gel</label>
-        <input type="checkbox" name="servicio" value="capping">
-
-        <label for="servicio">Extensión soft-gel</label>
-        <input type="checkbox" name="servicio" value="soft-gel">
-
-        <label for="servicio">Combos</label>
-        <input type="checkbox" name="servicio" value="combos">
-
-        <!-- caja de comentario -->
-        <h4>Envíe su consulta</h4>
-        <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
-
-        <!-- botones -->
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar formulario</button>
-        
-    </form>
     <!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     
-    <!-- pie de pagina -->
-    <footer class="bg-Light text-dark py-2"> 
-            <div class="row div-footer">
-                <a href="../index.html" class="col-3 text-reset text-uppercase d-flex aling-items-center"> 
-                    <img src="../assets/iconos/icono favicom.png" alt="logo" class="img-logo mr-1">
-                </a>
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase">Paginas</li>
-                    <li><a href="./servicios.html" class="text-reset">Servicios</a></li>
-                    <li><a href="./combos.html" class="text-reset">Combos</a></li>
-                    <li><a href="./fotos.html" class="text-reset">Imagenes</a></li>
-                    <li><a href="#" class="text-reset">Contacto</a></li>
-                    <li><p>&copy; 2023 Copyright</p></li>
-                </ul>
-                <!-- redes sociales  -->
-                <ul class="col-3 list-unstyled">
-                    <li class="font-weight-bold text-uppercase">Redes Sociales</li>
-                    <li class="d-flex justify-content-between">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" class="text-reset"><img src="../assets/iconos/facebook.png" alt="facebook"></a>
-                    <a target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" class="text-reset"><img src="../assets/iconos/instagram.png" alt="instagram"></a>
-                    <a target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" class="text-reset"><img src="../assets/iconos/whatsapp.png" alt="whatsapp"></a>
-                    <a target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" class="text-reset"><img src="../assets/iconos/tik-tok.png" alt="tik-tok"></a>
-                    </li>
-                </ul> 
+<!-- pie de pagina -->
+<footer class="footer"> 
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <img src="../assets/iconos/icono-footer.svg" alt="icono">
+            </figure>
+        </div>
+        <div class="box">
+            <h3>SOBRE NOSOTROS</h3>
+            <p>Nuestros productos y servicios se basan en cinco pilares fundamentales:</p>
+            <p>Innovación, adaptabilidad, Sostenibilidad, Seguridad y Salubridad</p>
+        </div>
+        <div class="box">
+            <h3>SIGUENOS!</h3>
+            <div class="red-social">
+                <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" alt="facebook"></a>
+                <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" alt="instagram"></a>
+                <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" alt="whatsapp"></a>
+                <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" alt="tiktok"></a>
             </div>
-    </footer>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 Copyright <b>Mimarte-Center</b> -Todos los derechos reservados.</small>
+    </div>
+</footer>
+
+
 </body>
 </html>
