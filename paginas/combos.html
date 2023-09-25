@@ -16,43 +16,37 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Mimarte Center-Combos</title>
+    <title>MimArte Center-Combos</title>
 </head>
 
 <body>
-  <nav id="barra-navegacion">
-
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-    <a href="../index.html" class="enlace-uña"> <!-- class "enlace" -->
-        <img class="icon-uña" src="../assets/iconos/icono favicom.png" alt="icono-uña">
-    </a>
-
-      <ul>
-        <a class="estilo-links" href="../index.html">HOME</a>
-        <a class="estilo-links" href="./servicios.html">SERVICIOS</a>
-        <a class="estilo-links" href="#">COMBOS</a>
-        <a class="estilo-links" href="./fotos.html">IMAGENES</a>
-        <a class="estilo-links" href="./contacto.html">CONTACTO</a>
-      </ul>
-  </nav>
-
+    <nav>
+        <div class="logo_name">MimArte</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="../index.html">HOME</a></li>
+            <li><a href="./servicios.html">SERVICIOS</a></li>
+            <li><a href="#">COMBOS</a></li>
+            <li><a href="./fotos.html">IMAGENES</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+</nav> 
 
 <!-- primer combo -->
-  <div class="container">
-    <h1>Los mejores combos encontralos acá!</h1>
+<div class="container">
+    <h1 id="animation">Los mejores combos encontralos acá!</h1>
 
     <div class="blog-post">
         <div class="blog-post_img">
-            <img src="../assets/logo-trans.jpeg"
-                alt="">
+            <img src="../assets/logo-trans.jpeg" alt="imagen del logo">
         </div>
         <div class="blog-post_info">
             <h2 class="blog-post_title">COMBO 1</h2>
             <p class="blog-post_text">
-              Esmaltado semipermanente en manos y pies, realizados el mismo dia con rebajas de precio!
+            Esmaltado semipermanente en manos y pies, realizados el mismo dia con rebajas de precio!
             </p>
             <a href="./contacto.html" class="blog-post_cta">Lo quiero!</a>
         </div>
@@ -61,13 +55,12 @@
     <!-- segundo combo -->
     <div class="blog-post">
         <div class="blog-post_img">
-            <img src="../assets/logo-trans.jpeg"
-                alt="">
+            <img src="../assets/logo-trans.jpeg" alt="imagen del logo">
         </div>
         <div class="blog-post_info">
-            <h2 class="blog-post_title">COMBO 3</h2>
+            <h2 class="blog-post_title">COMBO 2</h2>
             <p class="blog-post_text">
-              Cappin gel en manos y semipermanenetes en pies, realizados el mismo dia con rebajas de precio!
+            Cappin gel en manos y semipermanenetes en pies, realizados el mismo dia con rebajas de precio!
             </p>
             <a href="./contacto.html" class="blog-post_cta">Lo quiero!</a>
         </div>
@@ -75,59 +68,50 @@
 
 <!-- tercer combo -->
     <div class="blog-post">
-      <div class="blog-post_img">
-          <img src="../assets/logo-trans.jpeg"
-              alt="">
-      </div>
-      <div class="blog-post_info">
-          <h2 class="blog-post_title">COMBO 3</h2>
-          <p class="blog-post_text">
+        <div class="blog-post_img">
+            <img src="../assets/logo-trans.jpeg" alt="imagen del logo">
+        </div>
+        <div class="blog-post_info">
+            <h2 class="blog-post_title">COMBO 3</h2>
+            <p class="blog-post_text">
             Extension soft gel y semipermanenetes en pies, realizados el mismo dia con rebajas de precio!
-          </p>
-          <a href="./contacto.html" class="blog-post_cta">Lo quiero!</a>
-      </div>
-  </div>
-
+            </p>
+            <a href="./contacto.html" class="blog-post_cta">Lo quiero!</a>
+        </div>
+    </div>
 </div>
 
 
+<!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-
-
-
-
-  
-  <!-- JS Boostrap (antes de cerrar el body colocamos Java Scrip)-->
-  <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- pie de pagina -->
-  <footer class="footer"> 
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <img src="../assets/iconos/icono-footer.svg" alt="icono">
-            </figure>
-        </div>
-        <div class="box">
-            <h3>SOBRE NOSOTROS</h3>
-            <p>Nuestros productos y servicios se basan en cinco pilares fundamentales:</p>
-            <p>Innovación, adaptabilidad, Sostenibilidad, Seguridad y Salubridad</p>
-        </div>
-        <div class="box">
-            <h3>SIGUENOS!</h3>
-            <div class="red-social">
-                <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" alt="facebook"></a>
-                <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" alt="instagram"></a>
-                <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" alt="whatsapp"></a>
-                <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" alt="tiktok"></a>
+<!-- pie de pagina -->
+    <footer class="footer"> 
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <img src="../assets/iconos/icono-footer.svg" alt="icono">
+                </figure>
+            </div>
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Nuestros productos y servicios se basan en cinco pilares fundamentales:</p>
+                <p>Innovación, adaptabilidad, Sostenibilidad, Seguridad y Salubridad</p>
+            </div>
+            <div class="box">
+                <h3>SIGUENOS!</h3>
+                <div class="red-social">
+                    <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d"></a>
+                    <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw=="></a>
+                    <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1"></a>
+                    <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2023 Copyright <b>Mimarte-Center</b> -Todos los derechos reservados.</small>
-    </div>
-</footer>
+        <div class="grupo-2">
+            <small>&copy; 2023 Copyright <b>Mimarte-Center</b> -Todos los derechos reservados.</small>
+        </div>
+    </footer>
 </body>
 
 </html>

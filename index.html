@@ -17,6 +17,7 @@
 
     <!-- Font Awsome -->
     <script src="https://kit.fontawesome.com/dd60a290a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
@@ -25,64 +26,55 @@
 </head>
 
 <body>
-    <nav id="barra-navegacion">  <!-- aqui dentro van haber LINKS/ no duplicar ID -->
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
-        <a href="#" class="enlace-uña"> 
-            <img class="icon-uña" src="./assets/iconos/icono favicom.png" alt="icono-uña">
-        </a>
-        <ul>
-            <a class="estilo-links" href="#">HOME</a><!--  etiqueta arcord/ el '#' es para no irse a otra pestaña al cliquear  -->
-            <a class="estilo-links" href="./paginas/servicios.html">SERVICIOS</a>                
-            <a class="estilo-links" href="./paginas/combos.html">COMBOS</a>
-            <a class="estilo-links" href="./paginas/fotos.html">IMAGENES</a>
-            <a class="estilo-links" href="./paginas/contacto.html">CONTACTO</a>
-        </ul>
+    <nav>
+            <div class="logo_name">MimArte</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="./paginas/servicios.html">SERVICIOS</a></li>
+                <li><a href="./paginas/combos.html">COMBOS</a></li>
+                <li><a href="./paginas/fotos.html">IMAGENES</a></li>
+                <li><a href="./paginas/contacto.html">CONTACTO</a></li>
+            </ul>
     </nav>
-    <section></section>
 
     <header class="img-header"> <!-- imagen de fondo -->
         <img class="img-fluid" src="./assets/logo-color.png" alt="imagen del logo">
     </header>
     
-    <main class="main-container">
-        <section> 
-            <h1 class="text-center my-5">¿Por qué elegirnos?</h1>
+    <main>
+        <section class="section-container"> 
+            <h1 id="animation" class="text-center my-5">¿Por qué elegirnos?</h1>
             <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <p>Desde el año 2018 nos especializamos y profesionalizamos para dedicarnos al cuidado de manos y pies. 
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Desde el año 2018 nos especializamos y profesionalizamos para dedicarnos al cuidado de manos y pies. 
                             Ofrecemos a nuestras clientas un servicio de alto nivel con productos de calidad y con una duración óptima,
                             siempre a la vanguardia en productos, colores y tendencias a elección de ellas, todo realizado a mano alzada.</p>
-
-                        <p>Nuestro objetivo es resaltar la belleza de manos y pies de nuestras clientas esmaltando desde 
+    
+                            <p>Nuestro objetivo es resaltar la belleza de manos y pies de nuestras clientas esmaltando desde 
                             diferentes servicios, ultimando cada detalle y ofreciendo los mejores combos, calidad de productos y 
                             duración de servicios logrando así tu elección de volver a elegirnos gracias a nuestro cuidado</p>
-                    
+                        
                         </div>
-                    <div class="col-6">
-                        <img class="img-fluid" src="./assets/manicurista-trabajo.jpg" alt="manicurista trabajando">
+                        <div class="col-6">
+                            <img class="img-fluid" src="./assets/manicurista-trabajo.jpg" alt="manicurista trabajando">
+                        </div>
                     </div>
-                </div>
             </div>
-
+    
             <div>  
                 <h2>Hoy es un hermoso dia para MimArte!</h2>
             </div>
                 <!-- iframe -->
-            <div class="main-video">
+            <div class="div-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WbfV0FsGwnY?si=d6cSrGkWcwJZ0C5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
     </main>
-
-
-
-
-
 
 
     <!-- JS Boostrap-->
@@ -104,10 +96,10 @@
             <div class="box">
                 <h3>SIGUENOS!</h3>
                 <div class="red-social">
-                    <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d" alt="facebook"></a>
-                    <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw==" alt="instagram"></a>
-                    <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1" alt="whatsapp"></a>
-                    <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1" alt="tiktok"></a>
+                    <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/profile.php?id=100091879842055&mibextid=LQQJ4d"></a>
+                    <a class="fa-brands fa-instagram" target="_blank" href="https://instagram.com/mimarte_center?igshid=MjEwN2IyYWYwYw=="></a>
+                    <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/message/KTDH4NFLXVJ5H1"></a>
+                    <a class="fa-brands fa-tiktok" target="_blank" href="https://www.tiktok.com/@mimarte_center?_t=8f3o6ohr42n&_r=1"></a>
                 </div>
             </div>
         </div>
