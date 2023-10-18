@@ -41,7 +41,8 @@
         <h1 id="animation">Contactanos!</h1>
         <div class="contact-border"></div>
 
-        <form class="contact-form" action="procesar.php" method="post"> <!-- abrimos formulario, metodo POST para data invisible al viajar -->
+        <form class="contact-form" action="https://formsubmit.co/mimarte1403@gmail.com" method="post"> <!-- vinculacion del email-->
+        
             <!-- input nombre -->
             <input type="text" class="contact-form-text" name="nombre" placeholder="Nombre">
 
@@ -56,6 +57,12 @@
             
             <!-- boton -->
             <button type="submit" class="contact-form-btn">Enviar</button>
+
+            <!-- redireccionar al home -->
+            <input type="hidden" name="_next" value="https://mimarte-center.netlify.app/paginas/contacto"> 
+
+            <!-- quitar captchat -->
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 
