@@ -23,4 +23,4 @@ Explora las diferentes secciones del sitio web:
 
 ## Developer Nahiely Xiomara Back
 
-[Linkedin] (linkedin.com/in/nahielyback)
+- [Linkedin](linkedin.com/in/nahielyback)
